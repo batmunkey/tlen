@@ -1,11 +1,26 @@
 <?php 
-# Homework 10
+# Homework 6
 # Sam Powell sam.powell@lasp.colorado.edu
-# /var/www/html/hw10/hw10.php and other libs in that dir
-# Purpose: to create a dynamic web app linked to mysql test
+# /var/www/html/hw6/hw6.php and other libs in that dir
+# Purpose: to create a dynamic web app linked to mysql
+
+#Instantiate vars
+isset ( $_REQUEST['i'] ) ? $i = strip_tags($_REQUEST['i']) : $i = ""; 
+isset ( $_REQUEST['cid'] ) ? $cid = strip_tags($_REQUEST['cid']) : $cid = ""; 
+isset ( $_REQUEST['bid'] ) ? $bid = strip_tags($_REQUEST['bid']) : $bid = "";
+isset ( $_REQUEST['pid'] ) ? $pid = strip_tags($_REQUEST['pid']) : $pid = "";
+isset ( $_REQUEST['sid'] ) ? $sid = strip_tags($_REQUEST['sid']) : $sid = "";
+isset ( $_REQUEST['title'] ) ? $title = strip_tags($_REQUEST['title']) : $title = "";
+isset ( $_REQUEST['character'] ) ? $character = strip_tags($_REQUEST['character']) : $character= "";
+isset ( $_REQUEST['book'] ) ? $book = strip_tags($_REQUEST['book']) : $book = "";
+isset ( $_REQUEST['story'] ) ? $story = strip_tags($_REQUEST['story']) : $story = "";
+isset ( $_REQUEST['picture'] ) ? $picture = strip_tags($_REQUEST['picture']) : $picture = "";
+isset ( $_REQUEST['characterName'] ) ? $characterName = strip_tags($_REQUEST['characterName']) : $characterName = "";
+isset ( $_REQUEST['characterRace'] ) ? $characterRace = strip_tags($_REQUEST['characterRace']) : $characterRace = "";
+isset ( $_REQUEST['characterSide'] ) ? $characterSide = strip_tags($_REQUEST['characterSide']) : $characterSide = "";
 
 #Pointer for the lib and authentication files
-include_once('/var/www/html/hw10/hw10-lib.php');
+include_once('/var/www/html/hw6/hw6-lib.php');
 
 #Tests for number or incorrect value
 numcheck($i);
@@ -18,12 +33,12 @@ numcheck($sid);
 connect($db);
 
 #This adds the reusable header
-include_once('/var/www/html/hw10/header.php');
+include_once('/var/www/html/hw6/header.php');
 
 echo "
 <html>
 
-<head> <title> TLEN5839 HW10:Sam Powell </title> </head>
+<head> <title> TLEN5839 HW5:Sam Powell </title> </head>
 
 <body> ";
 
