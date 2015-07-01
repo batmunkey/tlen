@@ -2,7 +2,7 @@
 # Homework 10
 # Sam Powell sam.powell@lasp.colorado.edu
 # /var/www/html/hw10/hw10.php and other libs in that dir
-# Purpose: to create a dynamic web app linked to mysql test
+# Purpose: to create a dynamic web app linked to mysql test1
 
 #Pointer for the lib and authentication files
 include_once('/var/www/html/hw10/hw10-lib.php');
