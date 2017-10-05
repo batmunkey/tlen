@@ -1,7 +1,5 @@
 <?php 
-# Homework 6
-# Sam Powell sam.powell@lasp.colorado.edu
-# /var/www/html/hw6/hw6.php and other libs in that dir
+# Sam Powell 
 # Purpose: to create a dynamic web app linked to mysql
 
 #Instantiate vars
